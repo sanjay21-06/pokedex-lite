@@ -1,50 +1,47 @@
-# 🧿 Pokedex Lite  
-A modern, lightweight Pokédex application built using **React + Vite**, featuring real-time search, type filters, beautiful card UI, favorites, and detailed Pokémon stats.
+# Pokedex Lite
 
-Powered by the free **PokéAPI**.
-
----
-
-## 🚀 Features
-
-### 🔍 Search Pokémon  
-Real-time search updates the results as you type.
-
-### 🏷️ Type Filters  
-Filter Pokémon by category (fire, grass, water, electric, bug, normal, etc).
-
-### ⭐ Favorites  
-Mark Pokémon as favorites.  
-Favorites are saved using **localStorage**, so they remain even after refresh.
-
-### 📊 Detailed Pokémon Modal  
-Click any Pokémon card to view:
-- Pokémon image  
-- Type (with theme color)
-- Abilities  
-- Base Stats (hp, attack, defense, special-attack, special-defense, speed)  
-- Interactive progress bars  
-
-### 🎨 Modern UI / UX  
-- Smooth 3D hover animations  
-- Dynamic card background colors based on type  
-- Blurred modal backdrop  
-- Fully responsive (mobile → desktop)
-
-### ⚡ Super Fast  
-Vite ensures instant reloads and great performance.
+A small React + Vite "Pokedex Lite" web app.  
+Lists Pokémon from the PokéAPI, supports search, type filters, pagination, favorites (persisted in localStorage), and a detailed modal view for each Pokémon.
 
 ---
 
-## 📸 Screenshots
+## Live Screenshots
 
-### Home Page  
-(Add screenshot here)
+Home page (grid + filters)  
+![home-screenshot](./screenshots/home.png)
 
-### Pokémon Details Modal  
-(Add screenshot here)
+Pokemon modal (detail view)  
+![modal-screenshot](./screenshots/modal.png)
 
-To add images:  
-Upload screenshots → copy GitHub URL → place like:
-```markdown
-![Home Page](https://github.com/your-username/repo-name/path/to/screenshot.png)
+> Replace `./screenshots/home.png` and `./screenshots/modal.png` with your actual screenshots in the `screenshots/` folder.
+
+---
+
+## Features (implemented)
+- Fetch Pokémon list from PokéAPI.  
+- Responsive grid view of Pokémon with image and name.  
+- Search by name (instant client-side filtering).  
+- Filter by Pokémon type (select a type to show only matching Pokémon).  
+- Pagination (fetches data page-by-page).  
+- Favorite Pokémon and persist favorites in `localStorage`.  
+- Modal detail view: shows stats and abilities.  
+- Nice UI: card hover effects, modal design, dynamic background color based on selected Pokémon.
+
+These requirements follow the assignment guidelines. :contentReference[oaicite:0]{index=0}
+
+---
+
+## Tech stack
+- React + Vite  
+- Plain CSS (component-scoped `.css` files)  
+- Fetch API for requests to PokéAPI  
+- localStorage for favorites persistence
+
+---
+
+## Project setup (local)
+
+1. Clone the repo
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
