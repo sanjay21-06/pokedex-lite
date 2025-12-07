@@ -1,0 +1,66 @@
+.pokemon-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  }
+  
+  .poke-id {
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+  
+  .pokemon-card img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .pokemon-card h3 {
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .type-badge {
+    display: inline-block;
+    background: #ffaf40;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .fav-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #eee;
+    color: #444;
+    transition: all 0.3s ease;
+  }
+  
+  .fav-btn:hover {
+    background: #ddd;
+  }
+  
+  .active-fav {
+    background: #ffcc00;   /* yellow highlight */
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(255, 200, 0, 0.4);
+  }
+  
+  .active-fav:hover {
+    background: #ffdb4d;
+  }
+  

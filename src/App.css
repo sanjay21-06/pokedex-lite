@@ -1,0 +1,70 @@
+.app {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.pagination {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination button {
+  padding: 12px 20px;
+  background: #ff4757;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background: #aaa;
+}
+
+.type-filter {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: all 0.25s ease;
+}
+
+.filter-chip:hover {
+  background: #eee;
+}
+
+.active-chip {
+  background: #ff9800;
+  color: white;
+  border-color: #ff9800;
+  box-shadow: 0 3px 8px rgba(255, 152, 0, 0.3);
+}
