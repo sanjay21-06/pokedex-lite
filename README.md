@@ -7,13 +7,13 @@ Lists Pokemon from the PokeAPI, supports search, type filters, pagination, favor
 
 ## Live Screenshots
 
-Home page (grid + filters)  
-![home-screenshot](./screenshots/home.png)
+Home page (grid + filters) 
+<img width="1440" height="900" alt="HomePage" src="https://github.com/user-attachments/assets/de3c9d11-15f2-4d27-b6a4-ee561ee4a303" />
 
-Pokemon modal (detail view)  
-![modal-screenshot](./screenshots/modal.png)
 
-> Replace `./screenshots/home.png` and `./screenshots/modal.png` with your actual screenshots in the `screenshots/` folder.
+Pokemon modal (detail view) 
+<img width="1440" height="900" alt="PokemonDetails" src="https://github.com/user-attachments/assets/f2b4007f-c846-4433-8c08-e6c964a716fb" />
+
 
 ---
 
@@ -27,7 +27,6 @@ Pokemon modal (detail view)
 - Modal detail view: shows stats and abilities.  
 - Nice UI: card hover effects, modal design, dynamic background color based on selected Pokemon.
 
-These requirements follow the assignment guidelines. :contentReference[oaicite:0]{index=0}
 
 ---
 
