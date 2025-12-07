@@ -5,6 +5,10 @@ Lists Pokemon from the PokeAPI, supports search, type filters, pagination, favor
 
 ---
 
+## Live Demo
+https://pokedex-lite-chi.vercel.app/
+
+
 ## Live Screenshots
 
 Home page (grid + filters) 
