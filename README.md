@@ -1,7 +1,7 @@
 # Pokedex Lite
 
 A small React + Vite "Pokedex Lite" web app.  
-Lists Pokémon from the PokéAPI, supports search, type filters, pagination, favorites (persisted in localStorage), and a detailed modal view for each Pokémon.
+Lists Pokemon from the PokeAPI, supports search, type filters, pagination, favorites (persisted in localStorage), and a detailed modal view for each Pokemon.
 
 ---
 
@@ -18,14 +18,14 @@ Pokemon modal (detail view)
 ---
 
 ## Features (implemented)
-- Fetch Pokémon list from PokéAPI.  
-- Responsive grid view of Pokémon with image and name.  
+- Fetch Pokemon list from PokeAPI.  
+- Responsive grid view of Pokemon with image and name.  
 - Search by name (instant client-side filtering).  
-- Filter by Pokémon type (select a type to show only matching Pokémon).  
+- Filter by Pokemon type (select a type to show only matching Pokémon).  
 - Pagination (fetches data page-by-page).  
-- Favorite Pokémon and persist favorites in `localStorage`.  
+- Favorite Pokemon and persist favorites in `localStorage`.  
 - Modal detail view: shows stats and abilities.  
-- Nice UI: card hover effects, modal design, dynamic background color based on selected Pokémon.
+- Nice UI: card hover effects, modal design, dynamic background color based on selected Pokemon.
 
 These requirements follow the assignment guidelines. :contentReference[oaicite:0]{index=0}
 
@@ -34,7 +34,7 @@ These requirements follow the assignment guidelines. :contentReference[oaicite:0
 ## Tech stack
 - React + Vite  
 - Plain CSS (component-scoped `.css` files)  
-- Fetch API for requests to PokéAPI  
+- Fetch API for requests to PokeAPI  
 - localStorage for favorites persistence
 
 ---
@@ -43,5 +43,5 @@ These requirements follow the assignment guidelines. :contentReference[oaicite:0
 
 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/sanjay21-06/pokedex-lite.git
+cd pokedex-lite
