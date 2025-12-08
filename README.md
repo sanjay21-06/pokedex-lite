@@ -62,25 +62,25 @@ Used to persist "Favorite Pokémon" even after page reload. This avoids using a 
 
 1. Dynamic UI Based on Pokémon Type
 
-I wanted the background color, modal header color, and card accents to match each Pokémon’s type.
+I wanted the background color, modal header color, and card accents to match each Pokémon’s type. <br>
 Solution: Created a type-to-color mapping inside the components and applied inline dynamic styles.
 
 2. Handling Asynchronous PokeAPI Calls
 
-Some Pokémon need a second API call (for stats, abilities, images).
+Some Pokémon need a second API call (for stats, abilities, images). <br>
 Solution: Used Promise.all() to fetch all Pokémon details in parallel → faster and smoother UI.
 
 3. Modal Overlapping Design & Backdrop Blur Issue
 
-Safari does not fully support backdrop-filter.
+Safari does not fully support backdrop-filter. <br>
 Solution: Added vendor prefixes + fallback transparency for cross-browser consistency.
 
 4. Favorites Not Updating on UI Initially
 
-Favorites were stored but UI did not re-render correctly.
+Favorites were stored but UI did not re-render correctly. <br>
 Solution: Added a state update + localStorage sync using useEffect().
 
 5. Pagination + Filters Working Together
 
-Changing pages while filters applied sometimes caused empty results.
+Changing pages while filters applied sometimes caused empty results. <br>
 Solution: Reset page to 1 whenever filter or search input changes.
