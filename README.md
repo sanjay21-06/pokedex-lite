@@ -42,9 +42,45 @@ Pokemon modal (detail view)
 
 ---
 
-## Project setup (local)
+## Why These Technologies Were Used
 
-1. Clone the repo
-```bash
-git clone https://github.com/sanjay21-06/pokedex-lite.git
-cd pokedex-lite
+React + Vite
+React helps build UI components efficiently, and Vite provides extremely fast development and optimized builds. Perfect for a lightweight web app like Pokedex Lite.
+
+Fetch API
+Used to fetch Pokémon data directly from the PokeAPI without installing extra libraries.
+
+Plain CSS
+Component-scoped .css files give full styling control, allowing custom card hover effects, gradients, dynamic modal UI, and animations.
+
+localStorage
+Used to persist "Favorite Pokémon" even after page reload. This avoids using a backend and keeps the app very lightweight.
+
+---
+
+## Challenges Faced & How They Were Solved
+
+1. Dynamic UI Based on Pokémon Type
+
+I wanted the background color, modal header color, and card accents to match each Pokémon’s type.
+Solution: Created a type-to-color mapping inside the components and applied inline dynamic styles.
+
+2. Handling Asynchronous PokeAPI Calls
+
+Some Pokémon need a second API call (for stats, abilities, images).
+Solution: Used Promise.all() to fetch all Pokémon details in parallel → faster and smoother UI.
+
+3. Modal Overlapping Design & Backdrop Blur Issue
+
+Safari does not fully support backdrop-filter.
+Solution: Added vendor prefixes + fallback transparency for cross-browser consistency.
+
+4. Favorites Not Updating on UI Initially
+
+Favorites were stored but UI did not re-render correctly.
+Solution: Added a state update + localStorage sync using useEffect().
+
+5. Pagination + Filters Working Together
+
+Changing pages while filters applied sometimes caused empty results.
+Solution: Reset page to 1 whenever filter or search input changes.
