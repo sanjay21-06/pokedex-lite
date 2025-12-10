@@ -54,7 +54,7 @@
   }
   
   .active-fav {
-    background: #ffcc00;   /* yellow highlight */
+    background: #ffcc00;  
     color: #000;
     font-weight: bold;
     box-shadow: 0 3px 8px rgba(255, 200, 0, 0.4);
